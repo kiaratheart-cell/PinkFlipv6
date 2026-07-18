@@ -1,0 +1,387 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		PF0000000000000000000002 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = PF0000000000000000000001 /* Extensions.swift */; };
+		PF0000000000000000000004 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = PF0000000000000000000003 /* Colors.swift */; };
+		PF0000000000000000000006 /* TimeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = PF0000000000000000000005 /* TimeProvider.swift */; };
+		PF0000000000000000000008 /* BurnInGuard.swift in Sources */ = {isa = PBXBuildFile; fileRef = PF0000000000000000000007 /* BurnInGuard.swift */; };
+		PF000000000000000000000A /* FlipAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = PF0000000000000000000009 /* FlipAnimation.swift */; };
+		PF000000000000000000000C /* DigitCardRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = PF000000000000000000000B /* DigitCardRenderer.swift */; };
+		PF000000000000000000000E /* FlipDigitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = PF000000000000000000000D /* FlipDigitView.swift */; };
+		PF0000000000000000000010 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = PF000000000000000000000F /* ClockView.swift */; };
+		PF0000000000000000000012 /* PinkFlipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = PF0000000000000000000011 /* PinkFlipView.swift */; };
+		PF0000000000000000000015 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = PF0000000000000000000014 /* Assets.xcassets */; };
+		PF0000000000000000000017 /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = PF0000000000000000000016 /* ScreenSaver.framework */; };
+		PF0000000000000000000019 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = PF0000000000000000000018 /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		PF0000000000000000000001 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		PF0000000000000000000003 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		PF0000000000000000000005 /* TimeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeProvider.swift; sourceTree = "<group>"; };
+		PF0000000000000000000007 /* BurnInGuard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurnInGuard.swift; sourceTree = "<group>"; };
+		PF0000000000000000000009 /* FlipAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipAnimation.swift; sourceTree = "<group>"; };
+		PF000000000000000000000B /* DigitCardRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitCardRenderer.swift; sourceTree = "<group>"; };
+		PF000000000000000000000D /* FlipDigitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipDigitView.swift; sourceTree = "<group>"; };
+		PF000000000000000000000F /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
+		PF0000000000000000000011 /* PinkFlipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinkFlipView.swift; sourceTree = "<group>"; };
+		PF0000000000000000000013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		PF0000000000000000000014 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		PF0000000000000000000016 /* ScreenSaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenSaver.framework; path = System/Library/Frameworks/ScreenSaver.framework; sourceTree = SDKROOT; };
+		PF0000000000000000000018 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		PF000000000000000000001A /* PinkFlip.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PinkFlip.saver; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		PF0000000000000000000029 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				PF0000000000000000000017 /* ScreenSaver.framework in Frameworks */,
+				PF0000000000000000000019 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		PF000000000000000000001B = {
+			isa = PBXGroup;
+			children = (
+				PF000000000000000000001E /* PinkFlip */,
+				PF000000000000000000001D /* Frameworks */,
+				PF000000000000000000001C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		PF000000000000000000001C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				PF000000000000000000001A /* PinkFlip.saver */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		PF000000000000000000001D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				PF0000000000000000000016 /* ScreenSaver.framework */,
+				PF0000000000000000000018 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		PF000000000000000000001E /* PinkFlip */ = {
+			isa = PBXGroup;
+			children = (
+				PF000000000000000000001F /* Sources */,
+				PF0000000000000000000014 /* Assets.xcassets */,
+				PF0000000000000000000013 /* Info.plist */,
+			);
+			path = PinkFlip;
+			sourceTree = "<group>";
+		};
+		PF000000000000000000001F /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				PF0000000000000000000001 /* Extensions.swift */,
+				PF0000000000000000000003 /* Colors.swift */,
+				PF0000000000000000000005 /* TimeProvider.swift */,
+				PF0000000000000000000007 /* BurnInGuard.swift */,
+				PF0000000000000000000009 /* FlipAnimation.swift */,
+				PF000000000000000000000B /* DigitCardRenderer.swift */,
+				PF000000000000000000000D /* FlipDigitView.swift */,
+				PF000000000000000000000F /* ClockView.swift */,
+				PF0000000000000000000011 /* PinkFlipView.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		PF0000000000000000000021 /* PinkFlip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = PF0000000000000000000025 /* Build configuration list for PBXNativeTarget "PinkFlip" */;
+			buildPhases = (
+				PF0000000000000000000028 /* Sources */,
+				PF0000000000000000000029 /* Frameworks */,
+				PF000000000000000000002A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PinkFlip;
+			productName = PinkFlip;
+			productReference = PF000000000000000000001A /* PinkFlip.saver */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		PF0000000000000000000020 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					PF0000000000000000000021 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = PF0000000000000000000022 /* Build configuration list for PBXProject "PinkFlip" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = PF000000000000000000001B;
+			productRefGroup = PF000000000000000000001C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				PF0000000000000000000021 /* PinkFlip */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		PF000000000000000000002A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				PF0000000000000000000015 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		PF0000000000000000000028 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				PF0000000000000000000002 /* Extensions.swift in Sources */,
+				PF0000000000000000000004 /* Colors.swift in Sources */,
+				PF0000000000000000000006 /* TimeProvider.swift in Sources */,
+				PF0000000000000000000008 /* BurnInGuard.swift in Sources */,
+				PF000000000000000000000A /* FlipAnimation.swift in Sources */,
+				PF000000000000000000000C /* DigitCardRenderer.swift in Sources */,
+				PF000000000000000000000E /* FlipDigitView.swift in Sources */,
+				PF0000000000000000000010 /* ClockView.swift in Sources */,
+				PF0000000000000000000012 /* PinkFlipView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		PF0000000000000000000023 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		PF0000000000000000000024 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		PF0000000000000000000026 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+				);
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = PinkFlip/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Screen Savers";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pinkflip.screensaver";
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Debug;
+		};
+		PF0000000000000000000027 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+				);
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = PinkFlip/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Screen Savers";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pinkflip.screensaver";
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		PF0000000000000000000022 /* Build configuration list for PBXProject "PinkFlip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				PF0000000000000000000023 /* Debug */,
+				PF0000000000000000000024 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		PF0000000000000000000025 /* Build configuration list for PBXNativeTarget "PinkFlip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				PF0000000000000000000026 /* Debug */,
+				PF0000000000000000000027 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = PF0000000000000000000020 /* Project object */;
+}

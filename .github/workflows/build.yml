@@ -1,0 +1,47 @@
+name: Build PinkFlip Screensaver
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-15
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Select latest available Xcode
+        run: sudo xcode-select -s /Applications/Xcode.app
+
+      - name: Locate the Xcode project
+        id: locate
+        run: |
+          PROJECT_PATH=$(find . -maxdepth 4 -name "PinkFlip.xcodeproj" | head -n 1)
+          echo "Found project at: $PROJECT_PATH"
+          echo "project_dir=$(dirname "$PROJECT_PATH")" >> "$GITHUB_OUTPUT"
+
+      - name: Build PinkFlip.saver
+        working-directory: ${{ steps.locate.outputs.project_dir }}
+        run: |
+          xcodebuild \
+            -project PinkFlip.xcodeproj \
+            -scheme PinkFlip \
+            -configuration Release \
+            -derivedDataPath build \
+            CODE_SIGN_IDENTITY="-" \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGNING_ALLOWED=NO \
+            build
+
+      - name: Locate build product
+        run: find . -name "PinkFlip.saver" -maxdepth 8
+
+      - name: Upload PinkFlip.saver as a build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: PinkFlip.saver
+          path: "**/PinkFlip.saver"
+          if-no-files-found: error
